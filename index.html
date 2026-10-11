@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marquis</title>
+  <meta name="description" content="Games, graphics and compilers.">
+  <link rel="stylesheet" href="style.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+<div class="wrap">
+
+  <aside class="side">
+    <a class="name" href="#top">Marquis</a>
+    <p class="tagline">Games, graphics and compilers.</p>
+    <nav aria-label="Projects">
+      <p class="group">Games</p>
+      <ol>
+        <li><a href="#the-reach">The Reach</a></li>
+        <li><a href="#empire-roleplay">Empire Roleplay</a></li>
+      </ol>
+      <p class="group">3D work</p>
+      <ol>
+        <li><a href="#renders">Renders</a></li>
+        <li><a href="#modelling">Modelling</a></li>
+      </ol>
+      <p class="group">Languages and compilers</p>
+      <ol>
+        <li><a href="#mettle">Mettle</a></li>
+        <li><a href="#c99mettle">C99Mettle</a></li>
+        <li><a href="#jaimtl">JaiMtl</a></li>
+        <li><a href="#baie">BAIE</a></li>
+      </ol>
+      <p class="group">Graphics, engines and tools</p>
+      <ol>
+        <li><a href="#lulkan">Lulkan</a></li>
+        <li><a href="#bridger">Bridger</a></li>
+      </ol>
+    </nav>
+    <p class="keys"><kbd>j</kbd> <kbd>k</kbd> next and previous project</p>
+    <p class="out"><a href="https://github.com/suidvandiewereld">GitHub</a></p>
+  </aside>
+
+  <main id="top">
+
+    <p class="intro">
+      I make games and the tools underneath them. Lately that's a sci-fi war game on Roblox; before it, I was Head of
+      Development on Empire Roleplay. On the side I write compilers and graphics code.
+    </p>
+
+    <h2 class="section">Games</h2>
+
+    <article class="project" id="the-reach">
+      <h3>The Reach</h3>
+      <p class="meta">Roblox &middot; in development &middot; Luau, Python, Blender</p>
+      <p>
+        A sci-fi war game on Roblox, built for a closed community on PC. You pilot the T-07, a walker with a sealed
+        cockpit, its own cold-start sequence, fire control and a thermal sight, or you fight on foot with a carbine, a
+        jump kit and suit systems. Both sides field AI armies, artillery and fighters.
+      </p>
+
+      <div class="viewer" data-viewer>
+        <div class="screen">
+          <img src="media/reach-walker.gif" width="480" height="270"
+               style="background-image: url(media/reach-walker.jpg)"
+               alt="A T-07 walker seen from behind, firing rockets across a desert canyon">
+        </div>
+        <ol class="clips">
+          <li>
+            <a href="media/reach-walker.gif" data-poster="media/reach-walker.jpg" aria-current="true"
+               data-alt="A T-07 walker seen from behind, firing rockets across a desert canyon">
+              <img src="media/reach-walker.jpg" width="96" height="54" alt="">
+              <span>The T-07 in chase view<small>17 s</small></span>
+            </a>
+          </li>
+          <li>
+            <a href="media/reach-dusk.gif" data-poster="media/reach-dusk.jpg"
+               data-alt="First-person infantry combat in a canyon at dusk, with walkers nearby">
+              <img src="media/reach-dusk.jpg" width="96" height="54" alt="">
+              <span>On foot at dusk<small>30 s</small></span>
+            </a>
+          </li>
+          <li>
+            <a href="media/reach-sandstorm.gif" data-poster="media/reach-sandstorm.jpg"
+               data-alt="First-person infantry firefight in a sandstorm">
+              <img src="media/reach-sandstorm.jpg" width="96" height="54" alt="">
+              <span>A firefight in a sandstorm<small>30 s</small></span>
+            </a>
+          </li>
+        </ol>
+      </div>
+
+      <details>
+        <summary>Details</summary>
+        <ul>
+          <li><b>The T-07.</b> A sealed pod that sees through camera panes, a cold-start boot sequence, fire control,
+            a thermal sight with 4, 8 and 16x zoom, smoke, rockets, decoy flares and field repair. The legs plant on
+            the ground with IK.</li>
+          <li><b>On foot.</b> Rifleman, gunner and anti-tank kits, a jump kit, suit systems (forcefield, stim, active
+            armour, sensor pulse, aim assist, cloak), ranks and team liveries.</li>
+          <li><b>The battle.</b> Two sides, each backed by an AI army fighting on a moving front line, with
+            artillery, airstrikes and orbital drops.</li>
+          <li><b>The air.</b> Fighters with their own flight model, IR missiles and flares.</li>
+          <li><b>The lobby</b> is a carrier you walk around in first person. It ends in a first-person drop to the
+            surface.</li>
+          <li><b>The look.</b> A physically based sky and time of day, and terrain generated in Python and written
+            into Roblox.</li>
+          <li><b>The pipeline.</b> Models, rigs, textures and animation clips come out of my own Python and Blender
+            pipeline. The game has its own orchestral score.</li>
+          <li><b>Next:</b> a month-long seasonal war between three races, fought planet by planet.</li>
+        </ul>
+      </details>
+    </article>
+
+    <article class="project" id="empire-roleplay">
+      <h3>Empire Roleplay</h3>
+      <p class="meta">Roblox &middot; Head of Development</p>
+      <p>
+        A medieval faction roleplay run by the Holy Roman Empire group: the Empire against France. Players enlist,
+        rise through faction ranks, capture territory, forge weapons and trade in markets whose prices move with every
+        deal, in a territory war that resets.
+      </p>
+      <ul class="stats">
+        <li><b>15.6 million</b> visits</li>
+        <li><b>124,000</b> favourites</li>
+        <li><b>363,000</b> group members</li>
+      </ul>
+      <details>
+        <summary>Details</summary>
+        <ul>
+          <li>I led the game's development.</li>
+          <li>Outside the game I built the Discord bots and the API behind its factions, regiments and member
+            verification.</li>
+          <li>The game has been live since April 2020.</li>
+        </ul>
+      </details>
+      <p class="links">
+        <a href="https://www.roblox.com/games/4866011667/Empire-Roleplay">Play on Roblox</a>
+        <a href="https://www.roblox.com/groups/5908211">The group</a>
+      </p>
+    </article>
+
+    <h2 class="section">3D work</h2>
+
+    <article class="project" id="renders">
+      <h3>Renders</h3>
+      <p class="meta">Blender</p>
+      <p>The T-07 walker in a forest, rendered in Blender. Click an image for the full size.</p>
+      <div class="gallery">
+        <figure>
+          <a href="media/render-forest-fire.jpg">
+            <img src="media/render-forest-fire.jpg" width="1600" height="900" loading="lazy"
+                 alt="The T-07 walker striding through a burning forest at night">
+          </a>
+          <figcaption>Walking through a forest fire.</figcaption>
+        </figure>
+        <figure>
+          <a href="media/render-forest-dawn.jpg">
+            <img src="media/render-forest-dawn.jpg" width="960" height="540" loading="lazy"
+                 alt="The T-07 walker in a misty pine forest at dawn, its searchlight on">
+          </a>
+          <figcaption>Dawn, with the searchlight on.</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="project" id="modelling">
+      <h3>Modelling</h3>
+      <p class="meta">Python, Blender &middot; signed distance fields</p>
+      <p>
+        The infantry suit from The Reach, modelled in Python with signed distance fields and meshed for the game: a
+        hex-scale weave over muscle-fibre bundles, with armour plates on top.
+      </p>
+      <div class="gallery two">
+        <figure>
+          <a href="media/model-suit-spine.jpg">
+            <img src="media/model-suit-spine.jpg" width="1100" height="1000" loading="lazy"
+                 alt="The back of the infantry suit, with a segmented armour plate down the spine">
+          </a>
+          <figcaption>The segmented spine plate.</figcaption>
+        </figure>
+        <figure>
+          <a href="media/model-suit-chest.jpg">
+            <img src="media/model-suit-chest.jpg" width="1100" height="1000" loading="lazy"
+                 alt="The front of the infantry suit, with its chest plate over the weave">
+          </a>
+          <figcaption>The chest plate.</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <h2 class="section">Languages and compilers</h2>
+
+    <article class="project" id="mettle">
+      <h3><a href="https://github.com/suidvandiewereld/Mettle">Mettle</a></h3>
+      <p class="meta">C &middot; language, compiler and toolchain</p>
+      <p>
+        A compiled, statically typed systems language where the toolchain is part of the contract. It generates native
+        x86-64, ARM64 and GPU code with its own optimizer, linker, runtime and debugger. No LLVM, no VM, no GC.
+      </p>
+<pre><code>@simd! fn checksum(data: uint8*, n: int64) -> int64 {
+  var sum: int64 = 0;
+  for i: int64 in 0..n {
+    sum = sum + (int64)data[i];
+  }
+  return sum;
+}</code></pre>
+      <p class="note"><code>@simd!</code> is a demand: the loop vectorizes or the build stops. Then ask what it did:</p>
+<pre><code>$ mettle --build --release --explain checksum.mettle
+  checksum (loop @ line 6): vectorized -> vpsadbw, 32-wide byte sum (AVX2)</code></pre>
+      <details>
+        <summary>Details</summary>
+        <ul>
+          <li>Finds use after free, double free, leaks and dangling returns while it compiles, with no lifetimes or
+            ownership marks to write.</li>
+          <li><code>--safe</code> checks every memory access, then proves away the checks it can.</li>
+          <li><code>--explain</code> reports what became of every loop and call, and names the compiler's own
+            gaps.</li>
+        </ul>
+<pre><code>warning[M0101]: Use of `data` after it was freed (freed at line 17); this is use-after-free
+   17 |    free(data);
+   18 |    println("checksum = {checksum(data, n)}");</code></pre>
+      </details>
+    </article>
+
+    <article class="project" id="c99mettle">
+      <h3><a href="https://github.com/suidvandiewereld/m-c99">C99Mettle</a></h3>
+      <p class="meta">Haskell &middot; C compiler</p>
+      <p>
+        A C99 compiler for Windows x86-64, written in Haskell on Mettle's backend, libmtlc. The programs it builds
+        import kernel32.dll and nothing else: no gcc, no MSVC, no C runtime.
+      </p>
+<pre><code>build.bat
+bin\c99mtlc.exe tests\fib.c -o bin\fib.exe</code></pre>
+      <details>
+        <summary>Details</summary>
+        <ul>
+          <li>Preprocessor, lexer, parser, renamer and type checker in Haskell, one module per stage; each stage
+            rebuilds the tree rather than mutating it.</li>
+          <li>libmtlc takes the IR and does the rest: optimizing, emitting objects and linking the PE file.</li>
+          <li>Building the compiler needs only GHC and its boot libraries.</li>
+        </ul>
+      </details>
+    </article>
+
+    <article class="project" id="jaimtl">
+      <h3><a href="https://github.com/suidvandiewereld/JaiMtl">JaiMtl</a></h3>
+      <p class="meta">C++ &middot; Jai compiler</p>
+      <p>A compiler for a working core of the Jai language, generating native code through libmtlc.</p>
+<pre><code>jaimtl.exe program.jai -o program.exe</code></pre>
+    </article>
+
+    <article class="project" id="baie">
+      <h3><a href="https://github.com/suidvandiewereld/BAIE">BAIE</a></h3>
+      <p class="meta">Ada &middot; x86-64 encoder</p>
+      <p>An x86-64 instruction encoder. Every byte is put together by hand from the Intel manual.</p>
+<pre><code>B.Push (RBP);
+B.Mov (RBP, RSP);
+B.Alu (Add_Op, RAX, Mem (RBX, RCX, 8, 16));   --  add rax, [rbx+rcx*8+16]
+B.Pop (RBP);
+B.Ret;</code></pre>
+    </article>
+
+    <h2 class="section">Graphics, engines and tools</h2>
+
+    <article class="project" id="lulkan">
+      <h3><a href="https://github.com/suidvandiewereld/Lulkan">Lulkan</a></h3>
+      <p class="meta">C++20 &middot; Vulkan 1.3</p>
+      <p>
+        A layer over Vulkan 1.3 that handles device setup, descriptors, barriers, synchronisation and swapchain
+        rebuilds, while keeping Vulkan's explicit frame loop.
+      </p>
+<pre><code>lk::Frame frame = device.beginFrame();
+lk::Commands&amp; cmd = frame.commands();
+cmd.beginRendering({.color = {{.texture = &amp;frame.backbuffer()}}});
+cmd.setPipeline(pipe);
+cmd.bind("uTexture", tex);        // by name, via SPIR-V reflection
+cmd.draw(3);
+cmd.endRendering();
+device.endFrame(frame);</code></pre>
+      <details>
+        <summary>Details</summary>
+        <ul>
+          <li>Descriptor layouts come from the shaders' own SPIR-V, read by a small built-in parser.</li>
+          <li>Barriers are tracked, not scheduled: every resource knows its last stage, access and layout.</li>
+          <li>Destruction waits until the GPU is done with a resource.</li>
+          <li>The public header includes no Vulkan headers, and no Vulkan SDK is needed to build.</li>
+        </ul>
+      </details>
+    </article>
+
+    <article class="project" id="bridger">
+      <h3><a href="https://github.com/suidvandiewereld/BRIDGER">Bridger</a></h3>
+      <p class="meta">C++ &middot; modding framework for Death Stranding</p>
+      <p>
+        It reads the Decima engine's own type information, so mods refer to classes, fields and functions by name
+        instead of by address: 9,867 types and 1,943 exported functions. Save a Lua file and the running game picks
+        it up within two seconds.
+      </p>
+<pre><code>hook("EntitySymbols::Entity_ExportedHeal", function(original, entity, amount)
+    return original(entity, amount * 2)
+end)</code></pre>
+      <details>
+        <summary>Details</summary>
+        <ul>
+          <li>Mods read and write live objects by field name, call exports by name and hook any function or message
+            handler.</li>
+          <li>Everything a mod changed reverts when it unloads, reloads or faults.</li>
+          <li>Mods can build engine objects with the engine's own constructors and hand them to the systems that use
+            them, and draw on the frame with their own HLSL.</li>
+        </ul>
+      </details>
+    </article>
+
+    <footer>
+      <a href="https://github.com/suidvandiewereld">github.com/suidvandiewereld</a>
+    </footer>
+
+  </main>
+</div>
+</body>
+</html>
